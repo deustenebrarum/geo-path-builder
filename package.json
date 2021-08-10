@@ -1,0 +1,25 @@
+{
+  "name": "geo-path-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "vite": "vite",
+    "serve": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deustenebrarum/geo-path-builder.git"
+  },
+  "author": "deustenebrarum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deustenebrarum/geo-path-builder/issues"
+  },
+  "homepage": "https://github.com/deustenebrarum/geo-path-builder#readme",
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.12.1",
+    "node-fetch": "^2.6.1",
+    "vite": "^2.4.4"
+  }
+}

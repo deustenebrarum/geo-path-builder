@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./elements/GoogleMap.js" async></script>
+    <title>Тест</title>
+</head>
+<body>
+    <google-map id="map"></google-map>
+</body>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<script async defer>
+    (async () => {
+        let map = document.getElementById('map');
+        let data = await fetch('https://waadsu.com/api/russia.geo.json', 
+                                {"headers": {"Content-Type": "application/json"}});
+        data = await data.json();
+        console.log(data);
+        map.addGeoJson(data);
+        // for (let path of data.features[0].geometry)
+    })()
+
+</script>
+</html>
